@@ -2,10 +2,8 @@
 FROM eclipse-temurin:21-jre AS builder
 
 WORKDIR /app
-COPY . .
-WORKDIR /app/LavalinkServer
+RUN ./gradlew :LavalinkServer:build --no-daemon
 
-RUN ./gradlew --no-daemon build
 
 # Stage 2 - Run
 FROM eclipse-temurin:18-jre-jammy
