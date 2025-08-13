@@ -74,7 +74,9 @@ plugins:
     allowDirectVideoIds: true
     allowDirectPlaylistIds: true
     clients:
-      - MUSIC
+      - MUSIC        # YouTube Music client
+      - WEB_REMIX    # YouTube Music web client
+      - ANDROID_MUSIC # Android YouTube Music
       - ANDROID_VR
       - WEB
       - WEBEMBEDDED
@@ -84,6 +86,9 @@ plugins:
       enabled: false
 
   lavasrc:
+    providers:
+      - "ytsearch:%ISRC%"
+      - "scsearch:%ISRC%"
     sources:
       spotify: true
     spotify:
