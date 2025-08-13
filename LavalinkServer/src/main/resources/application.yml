@@ -75,15 +75,15 @@ plugins:
     allowDirectPlaylistIds: true
     clients:
       - MUSIC        # YouTube Music client
-      - WEB_REMIX    # YouTube Music web client
       - ANDROID_MUSIC # Android YouTube Music
       - ANDROID_VR
       - WEB
       - WEBEMBEDDED
-      - TVHTML5_SIMPLY_EMBEDDED_PLAYER
     rotateClients: true
     oauth:
       enabled: false
+    providers:
+      - "ytsearch:%ISRC%"
 
   lavasrc:
     providers:
