@@ -73,6 +73,7 @@ plugins:
       - ANDROID_VR
       - WEB
       - WEBEMBEDDED
+    rotateClients: true
 
   lavasrc:
     sources:
@@ -97,7 +98,7 @@ logging:
   request:
     enabled: true
     includeClientInfo: true
-    includeHeaders: false
+    includeHeaders: true
     includeQueryString: true
     includePayload: true
     maxPayloadLength: 10000
