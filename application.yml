@@ -18,7 +18,7 @@ lavalink:
     password: ${LAVALINK_PASSWORD}
     sources:
       youtube: false
-      youtubemusic: true
+      youtubemusic: false
       spotify: true
       bandcamp: true
       soundcloud: true
