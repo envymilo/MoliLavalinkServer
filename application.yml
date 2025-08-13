@@ -23,7 +23,7 @@ lavalink:
       ipv6Block: true
     sources:
       youtube: false
-      youtubemusic: true
+      youtubemusic: false
       spotify: true
       bandcamp: true
       soundcloud: true
@@ -80,8 +80,6 @@ plugins:
       - WEB
       - WEBEMBEDDED
     rotateClients: true
-    oauth:
-      enabled: false
     providers:
       - "ytsearch:%ISRC%"
 

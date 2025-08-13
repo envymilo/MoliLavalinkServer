@@ -23,7 +23,7 @@ lavalink:
       ipv6Block: true
     sources:
       youtube: false
-      youtubemusic: true
+      youtubemusic: false
       spotify: true
       bandcamp: true
       soundcloud: true
@@ -74,14 +74,12 @@ plugins:
     allowDirectVideoIds: true
     allowDirectPlaylistIds: true
     clients:
-      - MUSIC        # YouTube Music client
-      - ANDROID_MUSIC # Android YouTube Music
-      - ANDROID_VR
       - WEB
       - WEBEMBEDDED
+      - MUSIC
+      - ANDROID_MUSIC
+      - ANDROID_VR
     rotateClients: true
-    oauth:
-      enabled: false
     providers:
       - "ytsearch:%ISRC%"
 
@@ -111,7 +109,7 @@ logging:
   request:
     enabled: true
     includeClientInfo: true
-    includeHeaders: true
+    includeHeaders: false
     includeQueryString: true
     includePayload: true
     maxPayloadLength: 10000
