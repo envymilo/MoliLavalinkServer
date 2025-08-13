@@ -13,8 +13,7 @@ build/*
 /plugin-api/out/
 /protocol/build/
 /protocol/out/
-application.yml
-LavalinkServer/plugins
+/LavalinkServer/
 .cache/
 site/
 .DS_Store
