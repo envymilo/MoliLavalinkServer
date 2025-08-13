@@ -79,8 +79,9 @@ plugins:
       - WEB
       - WEBEMBEDDED
       - TVHTML5_SIMPLY_EMBEDDED_PLAYER
-
     rotateClients: true
+    oauth:
+      enabled: false
 
   lavasrc:
     sources:
