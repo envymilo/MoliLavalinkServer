@@ -78,6 +78,8 @@ plugins:
       - ANDROID_VR
       - WEB
       - WEBEMBEDDED
+      - TVHTML5_SIMPLY_EMBEDDED_PLAYER
+
     rotateClients: true
 
   lavasrc:
