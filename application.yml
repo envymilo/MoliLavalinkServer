@@ -8,7 +8,7 @@ spring:
       enabled: false
 
 server:
-  port: 1012
+  port: ${PORT}
   address: 0.0.0.0
   http2:
     enabled: false
