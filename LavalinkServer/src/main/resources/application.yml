@@ -16,11 +16,6 @@ server:
 lavalink:
   server:
     password: ${LAVALINK_PASSWORD}
-    httpConfig:
-      # Use Cloudflare DNS
-      proxyHost: "2606:4700:4700::1111"
-    youtubeConfig:
-      ipv6Block: true
     sources:
       youtube: false
       youtubemusic: false
@@ -69,7 +64,7 @@ lavalink:
 plugins:
   youtube:
     apiKey: ${YOUTUBE_API_KEY}
-    enabled: true
+    enabled: false
     allowSearch: true
     allowDirectVideoIds: true
     allowDirectPlaylistIds: true
@@ -80,12 +75,9 @@ plugins:
       - ANDROID_MUSIC
       - ANDROID_VR
     rotateClients: true
-    providers:
-      - "ytsearch:%ISRC%"
 
   lavasrc:
     providers:
-      - "ytsearch:%ISRC%"
       - "scsearch:%ISRC%"
     sources:
       spotify: true
@@ -93,7 +85,7 @@ plugins:
       clientId: ${SPOTIFY_CLIENT_ID}
       clientSecret: ${SPOTIFY_CLIENT_SECRET}
       countryCode: "VN"
-      source: youtubemusic
+      source: soundcloud
 
 metrics:
   prometheus:
