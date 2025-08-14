@@ -20,8 +20,8 @@ lavalink:
       youtube: false
       youtubemusic: true
       spotify: true
-      bandcamp: true
       soundcloud: true
+      bandcamp: true
       twitch: true
       vimeo: true
       nico: true
